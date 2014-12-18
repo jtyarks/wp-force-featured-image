@@ -4,7 +4,7 @@
 ![Banner](assets/banner-1544x500.png)
 Ever wanted to force a user to publish a post with a featured image of a certain dimension? Search no more.
 
-**Contributors:** [x-team](http://profiles.wordpress.org/x-team), [jonathanbardo](http://profiles.wordpress.org/jonathanbardo), [westonruter](http://profiles.wordpress.org/westonruter)  
+**Contributors:** [jonathanbardo](http://profiles.wordpress.org/jonathanbardo), [westonruter](http://profiles.wordpress.org/westonruter), [x-team](http://profiles.wordpress.org/x-team)  
 **Tags:** [tinyMCE](http://wordpress.org/plugins/tags/tinyMCE), [admin](http://wordpress.org/plugins/tags/admin), [image](http://wordpress.org/plugins/tags/image), [featured-image](http://wordpress.org/plugins/tags/featured-image), [featured](http://wordpress.org/plugins/tags/featured)  
 **Requires at least:** 3.5  
 **Tested up to:** 4.1  
@@ -22,7 +22,7 @@ Ever wanted to force a user to publish a post with a featured image of a certain
 1. This plugin lets you specify which post-type requires to force a featured image to. It will also let you specify minimum dimensions for the image.
 Let's say, for example, you want to force a user to set an image on the default post type with the following dimensions (400px * 400px). Put this code in the function.php of your theme :
 
-```php
+`
 	function theme_force_featured_image( $options ){
 		$options['post'] = array(
 			'width'  => 400,
@@ -32,7 +32,7 @@ Let's say, for example, you want to force a user to set an image on the default 
 		return $options;
 	}
 	add_filter( 'force_featured_image_post_type', 'theme_force_featured_image' );
-```
+`
 
 ## Screenshots ##
 
