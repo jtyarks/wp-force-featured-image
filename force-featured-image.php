@@ -4,7 +4,7 @@
  * Plugin URI: http://x-team.com
  * Description: Force certain post types to be published with a featured image and a certain dimension if specified
  * Version: 0.2.0
- * Author: X-Team, Jonathan Bardo
+ * Author: Jonathan Bardo, X-Team
  * Author URI: http://x-team.com/wordpress/
  * Text Domain: force-featured-image
  * Domain Path: /languages
@@ -238,7 +238,7 @@ class Force_Featured_Image {
 	 * @return bool
 	 */
 	private function image_respect_size( $image_id, $post_type ){
-		$image_meta = wp_get_attachment_metadata( $image_id );
+		$image_meta  = wp_get_attachment_metadata( $image_id );
 		$option_meta = self::$options['post_types'][$post_type];
 
 		if ( $image_meta ) {
@@ -269,3 +269,13 @@ class Force_Featured_Image {
 }
 
 $GLOBALS['force_featured_image'] = new Force_Featured_Image();
+
+ function theme_force_featured_image( $options ){
+        $options['post'] = array(
+            'width'  => 400,
+            'height' => 400,
+        );
+
+        return $options;
+    }
+    add_filter( 'force_featured_image_post_type', 'theme_force_featured_image' );

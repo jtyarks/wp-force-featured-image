@@ -7,7 +7,7 @@ Ever wanted to force a user to publish a post with a featured image of a certain
 **Contributors:** [x-team](http://profiles.wordpress.org/x-team), [jonathanbardo](http://profiles.wordpress.org/jonathanbardo), [westonruter](http://profiles.wordpress.org/westonruter)  
 **Tags:** [tinyMCE](http://wordpress.org/plugins/tags/tinyMCE), [admin](http://wordpress.org/plugins/tags/admin), [image](http://wordpress.org/plugins/tags/image), [featured-image](http://wordpress.org/plugins/tags/featured-image), [featured](http://wordpress.org/plugins/tags/featured)  
 **Requires at least:** 3.5  
-**Tested up to:** 3.7.1  
+**Tested up to:** 4.1  
 **Stable tag:** trunk (master)  
 **License:** [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)  
 
